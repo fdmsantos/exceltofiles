@@ -29,8 +29,8 @@ require_once('vendor/autoload.php');
 use ExcelToFiles\ExcelToFiles;
 
 $exceltoFiles = new ExcelToFiles([
-  'template' => '{template.txt}',
-  'excel'    => '{excel.xls}',
+  'template' => 'template.txt',
+  'excel'    => 'excel.xls',
   'mapping'  => [
     '[name]' => 'A'
     '[country]' => 'B'
@@ -87,4 +87,6 @@ If the template variables have same logical or depends from two or more columns,
 $exceltoFiles->mapWithClosure('[name]',function($columns) {
 	return $columns['A'].' => '.$columns['B'];
 });
+
+$exceltoFiles->generate();
 ````
