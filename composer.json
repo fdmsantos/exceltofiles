@@ -1,0 +1,25 @@
+{
+	"name": "fdmsantos/exceltofiles",
+    "description": "Simple library to create files by excel rows",
+    "keywords": [
+        "php",
+        "excel",
+        "files",
+        "map"
+    ],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Fabio Santos",
+            "email": "fabiodanielmonteirosantos@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ExcelToFiles\\": "src/"
+        }
+    },
+    "require": {
+        "nuovo/spreadsheet-reader": "^0.5.11"
+    }
+}
