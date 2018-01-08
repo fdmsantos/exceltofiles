@@ -23,6 +23,7 @@ class ExcelToFiles
 		$this->excludeRows = isSet($options['excludeRows']) ? $options['excludeRows'] : [] ;
 		$this->filesname = isSet($options['filesname']) ? $options['filesname'] : '{A}.txt';
 		$this->alpahbet = array_flip(range('A', 'Z'));
+		$this->closures = [];
 	}
 
 	public function generate()
